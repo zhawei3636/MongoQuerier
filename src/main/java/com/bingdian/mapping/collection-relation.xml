@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+
+<collections xmlns="bingdian"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="collection-relation.xsd">
+
+    <collection name="City">
+        <relation>
+            <key>cityId</key>
+            <reference>City._id</reference>
+        </relation>
+        <relation>
+            <key>cityId</key>
+            <reference >City._id</reference>
+        </relation>
+    </collection>
+</collections>
+

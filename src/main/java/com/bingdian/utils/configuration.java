@@ -1,4 +1,4 @@
-package com.bingdian;
+package com.bingdian.utils;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,4 +7,5 @@ package com.bingdian;
  * Time: 下午5:43
  */
 public class configuration {
+
 }
