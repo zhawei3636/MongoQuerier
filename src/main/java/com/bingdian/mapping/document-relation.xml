@@ -1,8 +1,7 @@
-<?xml version="1.0"  encoding="utf-8" ?>
-
-<collections xmlns="bingdian"
+<?xml version="1.0" ?>
+<collections xmlns="http://bingdian.com"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:noNamespaceSchemaLocation="collection-relation.xsd">
+             xsi:schemaLocation="http://bingdian.com document-relation.xsd">
 
     <collection name="City">
         <relation>
@@ -11,7 +10,7 @@
         </relation>
         <relation>
             <key>cityId</key>
-            <reference >City._id</reference>
+            <reference type="string" >City._id</reference>
         </relation>
     </collection>
 </collections>
