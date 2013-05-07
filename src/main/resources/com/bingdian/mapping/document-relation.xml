@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<collections xmlns="http://bingdian.com"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://bingdian.com document-relation.xsd">
+
+    <collection name="City">
+        <relation>
+            <key>cityId</key>
+            <reference type="objectId" >City._id</reference>
+        </relation>
+    </collection>
+
+    <collection name="BidOrder">
+        <relation>
+            <key>memberId</key>
+            <reference type="objectId">Member._id</reference>
+        </relation>
+        <relation>
+            <key>cityId</key>
+            <reference type="objectId">City._id</reference>
+        </relation>
+        <relation>
+            <key>businessAreaId</key>
+            <reference type="objectId">BusinessArea._id</reference>
+        </relation>
+    </collection>
+    
+</collections>
+

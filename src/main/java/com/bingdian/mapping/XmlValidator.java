@@ -24,11 +24,15 @@ import java.net.URL;
 public class XmlValidator {
 
     public static void main(String... args ){
+//        System.out.println(XmlValidator.class.getClassLoader().getResource("").toString());
 //        String xmlFileName = "com/bingdian/mapping/document-relation.xml";
 //        InputStream is = XmlValidator.class.getClassLoader().getResourceAsStream(xmlFileName);
 //        BufferedInputStream bis = new BufferedInputStream(is);
 //        System.out.println(bis);
+//        long start = System.currentTimeMillis();
         validateXMLByXSD();
+//        long end = System.currentTimeMillis();
+//        System.out.println("耗时： " + (end - start));
     }
 
     /**
@@ -71,7 +75,7 @@ public class XmlValidator {
             //如果错误信息不为空，说明校验失败，打印错误信息
             if (errorHandler.getErrors().hasContent()) {
                 System.out.println("XML文件通过XSD文件校验失败！");
-                writer.write(errorHandler.getErrors());
+//                writer.write(errorHandler.getErrors());
             } else {
                 System.out.println("Good! XML文件通过XSD文件校验成功！");
             }
